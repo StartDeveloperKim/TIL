@@ -1,9 +1,19 @@
-result=100
-num=4
-count=0
+import sys
+input=sys.stdin.readline
 
-while count<=22:
-    result-=num
-    count+=1
+n=int(input())
+info=[]
+for _ in range(n):
+    info.append(list(map(int, input().split())))
 
-print(count)
+info.sort(key=lambda x: (x[1], x[0]))
+
+start_time=info[0][1]
+ans=1
+for i in range(1, n):
+    if info[i][0]>=start_time:
+        start_time=info[i][1]
+        ans+=1
+
+
+print(ans)
