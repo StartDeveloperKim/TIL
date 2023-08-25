@@ -1,6 +1,6 @@
 # Network
 ## 개요
-- [HTTP, 특징과 응답코드]()
+- [HTTP, 특징과 응답코드](https://github.com/StartDeveloperKim/TIL/blob/main/Network.md#http--%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%9D%91%EB%8B%B5%EC%BD%94%EB%93%9C)
 
 ## HTTP,  특징과 응답코드
  **Hyper Text Transfer Protocol의 약자로서 인터넷 상에서 웹 서버와 클라이언트 간에 데이터를 주고받이 위한 프로토콜이다.**
