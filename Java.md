@@ -1,9 +1,10 @@
 # Java
 ## 개요
-- [Java의 특징, JDK와 JRE]()
-- [JVM]()
-- [==와 equals()의 차이]()
-- [final과 불변의 중요성]()
+- [Java의 특징, JDK와 JRE](https://github.com/StartDeveloperKim/TIL/blob/main/Java.md#java%EC%9D%98-%ED%8A%B9%EC%A7%95-jdk%EC%99%80-jre)
+- [JVM](https://github.com/StartDeveloperKim/TIL/blob/main/Java.md#jvmjava-virtual-machine)
+- [==와 equals()의 차이](https://github.com/StartDeveloperKim/TIL/blob/main/Java.md#%EC%99%80-equals%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+- [final과 불변의 중요성](https://github.com/StartDeveloperKim/TIL/blob/main/Java.md#final%EA%B3%BC-%EB%B6%88%EB%B3%80%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1)
+- [오버라이딩과 오버로딩]()
   
 ## Java의 특징, JDK와 JRE
 ### 객체지향언어이다
@@ -127,4 +128,39 @@
 
 멀티스레드 환경에서 여러 스레드가 동시에 접근하여 데이터를 변경하려는 시도가 발생할 수 있다. 이런 경우 변경 불가능한 데이터는 스레드 간의 동기화 없이도 안전하게 공유될 수 있다. 즉, 'final'로 불변성을 확보하면 스레드 간의 Race Condition과 같은 문제를 예방할 수 있다.
 
+-----------
+
+## 오버라이딩과 오버로딩
+### 오버라이딩(Overriding)
+오버라이딩은 부모 클래스에서 이미 정의된 메서드를 자식 클래스에서 같은 이름과 매개변수로 재정의하는 것이다. 
+오버라이딩을 통해 다형성을 구현하며, 부모 클래스의 메서드를 자식 클래스에서 필요에 맞게 재정의하여 사용할 수 있다.
+```
+    class Parent {
+        void show() {
+            System.out.println("Parent's show method");
+        }
+    }
+    
+    class Child extends Parent {
+        @Override
+        void show() {
+            System.out.println("Child's show method");
+        }
+    }
+```
+### 오버로딩(Overloading)
+오버로딩은 같은 클래스 내에서 메서드의 이름은 같지만, 매개변수의 개수나 타입을 다르게하여 여러 개의 메서드를 정의하는 것이다.
+오버로딩을 통해 같은 이름의 메서드가 다양한 매개변수 조합에 대해 작동할 수 있다.
+```
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+    
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+
+```
 
