@@ -8,7 +8,7 @@
    특정 클래스의 인스턴스를 단 한 번만 생성하고, 이 인스턴스에 대한 접근을 제한하여 예기치 않은 동작을 방지한다.
 
 ## 코드
-```
+```java
 public class Singleton {
 
   private static Singleton instance;
