@@ -8,7 +8,7 @@
    빌더 패턴은 가독성을 향상시키고 코드의 유지보수성을 높이는 데 도움을 준다.   
 
 ## 코드
-```
+```java
 public class Product {
   private String name;
   private int price;
