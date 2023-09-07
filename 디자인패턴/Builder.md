@@ -66,7 +66,7 @@ public class Main {
    하지만 이러한 단점은 Lombok 라이브러리를 사용하므로써 어느정도 해결이 된다.
 
 #### Lombok 사용
-```
+```java
 public class Product {
   private String name;
   private int price;
